@@ -23,4 +23,16 @@ public class GameController : MonoBehaviour
         // Start the quiz
         quizManager.LoadRandomQuestion();
     }
+
+    public void QuitGame()
+    {
+        // Quit the application
+        Debug.Log("Quit Game");
+        Application.Quit();
+
+        // If running in the Unity editor
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+    }
 }
