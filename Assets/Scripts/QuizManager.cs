@@ -27,7 +27,7 @@ public class QuizManager : MonoBehaviour
     private int wrongAnswersCount;
     private int questionsAskedCount;
 
-    private const int TotalQuestions = 5;
+    private const int TotalQuestions = 25;
 
     void Start()
     {
@@ -137,7 +137,7 @@ public class QuizManager : MonoBehaviour
         endScreen.SetActive(true);
 
         // Display the results
-        resultsText.text = $"Correct Answers: {correctAnswersCount}\nWrong Answers: {wrongAnswersCount}";
+        resultsText.text = $"Correct Answers: {correctAnswersCount}    Wrong Answers: {wrongAnswersCount}";
     }
 
     public void RestartGame()
