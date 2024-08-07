@@ -5,6 +5,7 @@ public class GameController : MonoBehaviour
 {
     public GameObject startPanel;
     public GameObject gamePanel;
+    public GameObject endScreen;
     public QuizManager quizManager;
 
     void Start()
@@ -12,6 +13,7 @@ public class GameController : MonoBehaviour
         // Ensure the start panel is active and the game panel is inactive at the beginning
         startPanel.SetActive(true);
         gamePanel.SetActive(false);
+        endScreen.SetActive(false);
     }
 
     public void StartGame()
