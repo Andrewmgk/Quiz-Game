@@ -137,7 +137,7 @@ public class QuizManager : MonoBehaviour
         endScreen.SetActive(true);
 
         // Display the results
-        resultsText.text = $"Correct Answers: {correctAnswersCount}    Wrong Answers: {wrongAnswersCount}";
+        resultsText.text = $"Correct Answers: {correctAnswersCount}\nWrong Answers: {wrongAnswersCount}";
     }
 
     public void RestartGame()
