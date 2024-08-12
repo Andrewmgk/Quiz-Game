@@ -27,7 +27,7 @@ public class QuizManager : MonoBehaviour
     private int wrongAnswersCount;
     private int questionsAskedCount;
 
-    private const int TotalQuestions = 25;
+    private const int TotalQuestions = 20;
 
     void Start()
     {
@@ -101,6 +101,8 @@ public class QuizManager : MonoBehaviour
         {
             Debug.LogError("Not enough answer buttons for the number of answers.");
         }
+
+        
     }
 
     void OnAnswerSelected(int index)
