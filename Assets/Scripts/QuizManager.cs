@@ -79,6 +79,7 @@ public class QuizManager : MonoBehaviour
         {
             Debug.Log("Image loaded successfully: " + questionData.imageName);
             questionImage.sprite = questionSprite;
+            questionList.RemoveAt(currentQuestionIndex);
         }
         else
         {
