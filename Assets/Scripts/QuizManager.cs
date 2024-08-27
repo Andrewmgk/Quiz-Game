@@ -12,7 +12,7 @@ public class QuizManager : MonoBehaviour
     public Button[] answerButtons;
     public Color correctAnswerColor = Color.green;
     public Color wrongAnswerColor = Color.red;
-    public float feedbackDelay = 1.8f; // Set the delay duration to 1.7 seconds
+    public float feedbackDelay = 1.8f;
     public GameObject endScreenPanel;
     public GameObject gamePanel;
     public TextMeshProUGUI resultsText;
@@ -62,15 +62,14 @@ public class QuizManager : MonoBehaviour
             return;
         }
 
-        // Get a random question
+        //random question
         currentQuestionIndex = Random.Range(0, questionList.Count);
         QuestionData questionData = questionList[currentQuestionIndex];
         correctAnswerIndex = questionData.correctAnswerIndex;
 
-        // Update the UI with the selected question data
         questionText.text = questionData.question;
 
-        // Load the image from Resources
+        // Load the image
         Debug.Log("Loading image: " + questionData.imageName);
         Sprite questionSprite = Resources.Load<Sprite>(questionData.imageName);
         if (questionSprite != null)
