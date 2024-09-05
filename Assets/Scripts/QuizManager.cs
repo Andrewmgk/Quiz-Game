@@ -25,7 +25,7 @@ public class QuizManager : MonoBehaviour
     private int wrongAnswersCount;
     private int questionsAskedCount;
 
-    private const int TotalQuestions = 20;
+    private const int TotalQuestions = 31;
 
     void Start()
     {
@@ -158,15 +158,15 @@ public class QuizManager : MonoBehaviour
 
     public void RestartGame()
     {
+
         // Reset counts
         correctAnswersCount = 0;
         wrongAnswersCount = 0;
         questionsAskedCount = 0;
 
-        // Hide the end screen panel
         endScreenPanel.SetActive(false);
-
-        // Show the game panel and load the first question
+        endScreenPanel.SetActive(false); 
+        // Show the game panel
         gamePanel.SetActive(true);
         LoadRandomQuestion();
     }
