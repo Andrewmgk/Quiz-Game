@@ -2,8 +2,7 @@
  A History quiz game using unity engine.
  
  The quiz game includes 30 simple history questions from Greek history.
- 
- It's question has only one correct answear out of the four. The game is languaege ist in Greek
+ It's question has only one correct answear. The game language is in Greek.
  
 # 🏛️ Παιχνίδι Γνώσεων Ιστορίας
 
