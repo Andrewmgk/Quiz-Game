@@ -153,7 +153,7 @@ public class QuizManager : MonoBehaviour
         endScreenPanel.SetActive(true);
 
         // Display the results
-        resultsText.text = $"Correct Answers: {correctAnswersCount}\nWrong Answers: {wrongAnswersCount}";
+        resultsText.text = $"Σωστές απαντήσεις: {correctAnswersCount}\nΛάθος απαντήσεις: {wrongAnswersCount}";
     }
 
     public void RestartGame()
